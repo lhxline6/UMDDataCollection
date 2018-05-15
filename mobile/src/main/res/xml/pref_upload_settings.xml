@@ -1,0 +1,62 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+ <!--   <SwitchPreference
+        android:defaultValue="true"
+        android:key="notifications_new_message"
+        android:title="@string/pref_title_new_message_notifications" />
+-->
+    <!-- Allows the user to choose a ringtone in the 'notification' category. -->
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <!-- NOTE: RingtonePreference's summary should be set to its value by the activity code. -->
+   <!-- <RingtonePreference
+        android:defaultValue="content://settings/system/notification_sound"
+        android:dependency="notifications_new_message"
+        android:key="notifications_new_message_ringtone"
+        android:ringtoneType="notification"
+        android:title="@string/pref_title_ringtone" />
+-->
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+ <!--   <SwitchPreference
+        android:defaultValue="true"
+        android:dependency="notifications_new_message"
+        android:key="notifications_new_message_vibrate"
+        android:title="@string/pref_title_vibrate" />
+-->
+    <MultiSelectListPreference
+        android:dialogTitle="@string/pref_fields_to_encrypt"
+        android:key="mode_repeat"
+        android:summary=""
+        android:title="@string/pref_fields_to_encrypt"
+        android:entries="@array/pref_fields_to_encrypt_titles"
+        android:entryValues="@array/pref_fields_to_encrypt_values"
+        android:defaultValue="@array/empty_array"
+        />
+
+    <MultiSelectListPreference
+        android:dialogTitle="@string/pref_recommend_settings"
+        android:key="mode_repeat1"
+        android:summary=""
+        android:title="@string/pref_recommend_settings"
+        android:entries="@array/pref_recommend_settings_titles"
+        android:entryValues="@array/pref_recommend_settings_values"
+        android:defaultValue="@array/empty_array"
+        />
+
+    <Preference
+        android:key="addLocations"
+        android:title="Add Locations"
+        android:summary="Add preferred locations">
+        <intent android:action="net.huaxin.umdatacollection.AddLocationsActivity"/>
+    </Preference>
+
+    <EditTextPreference
+        android:key="preserve_distance"
+        android:title="@string/title_preserve_distance"
+        android:summary="@string/summary_preserve_distance"
+        android:dialogTitle="@string/dialog_title_preserve_distance"
+        android:defaultValue="@string/preserve_distance" />
+
+
+</PreferenceScreen>

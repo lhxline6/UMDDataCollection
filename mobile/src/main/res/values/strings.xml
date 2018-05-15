@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">UMDataCollection</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_upload_policies">Upload Policies</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_upload_without_network">Network condition</string>
+    <string-array name="pref_network_upload_titles">
+        <item>Store locally and upload when cellular network connected</item>
+        <item>Store locally and upload when Wi-Fi connected</item>
+        <item>Store locally</item>
+    </string-array>
+    <string-array name="pref_network_upload_values">
+        <item>2</item>
+        <item>1</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_data_encrypt">Data encryption policies</string>
+    <string-array name="pref_data_encrypt_titles">
+        <item>No encryption</item>
+        <item>User Defined Policies</item>
+        <item>Recommend Policies</item>
+        <item>Encrypt all</item>
+    </string-array>
+    <string-array name="pref_data_encrypt_values">
+        <item>-1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+    <string name="pref_collect_at">Collecting data</string>
+    <string-array name="pref_collect_at_titles">
+        <item>At all locations</item>
+        <item>Except self-defined locations</item>
+        <item>Except Top Locations</item>
+    </string-array>
+    <string-array name="pref_collect_at_values">
+        <item>-1</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="pref_recommend_settings">Encrypt Recommended data</string>
+    <string-array name="pref_recommend_settings_titles">
+        <item>Static data</item>
+        <item>Identifying data</item>
+        <item>Context-aware data</item>
+        <item>Semantic data</item>
+    </string-array>
+    <string-array name="pref_recommend_settings_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+
+    <string name="pref_fields_to_encrypt">Select fields to encrypt</string>
+    <string-array name="pref_fields_to_encrypt_titles">
+        <item>Phone Time</item>
+        <item>Phone Model</item>
+        <item>Phone GPS</item>
+        <item>Phone Temperature</item>
+        <item>Phone Light</item>
+        <item>Phone Gyrometer</item>
+        <item>Phone Accelerometer</item>
+        <item>Watch HeartRate</item>
+        <item>Watch Light</item>
+        <item>Watch Gyrometer</item>
+        <item>Watch Accelerometer</item>
+    </string-array>
+    <string-array name="pref_fields_to_encrypt_values">
+        <item>PhoneTime</item>
+        <item>PhoneModel</item>
+        <item>PhoneGPS</item>
+        <item>PhoneTemperature</item>
+        <item>PhoneLight</item>
+        <item>PhoneGYR</item>
+        <item>PhoneACC</item>
+        <item>WatchHeartRate</item>
+        <item>WatchLight</item>
+        <item>WatchACC</item>
+        <item>WatchGYR</item>
+    </string-array>
+    <string-array name="empty_array" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_upload_settings">Upload Settings</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+    <string name="pref_send_report">Send crash reports</string>
+    <string name="pref_send_report_summary">Helps to fix bugs</string>
+    <string name="title_activity_add_locations">AddLocationsActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_add__locations_">Add_Locations_Activity</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="title_activity_try">TryActivity</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="title_preserve_distance">Preserve distance</string>
+    <string name="summary_preserve_distance">For context aware policy, within the distance will be preserved</string>
+    <string name="dialog_title_preserve_distance">Enter distance (mile):</string>
+    <string name="preserve_distance">1</string>
+
+</resources>
